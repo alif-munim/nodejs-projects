@@ -4,8 +4,10 @@ const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const session = require("express-session");
 const flash = require("connect-flash");
+const config = require("./config/database")
+const passport = require("passport");
 
-mongoose.connect("mongodb://localhost/nodekb");
+mongoose.connect(config.database);
 let db = mongoose.connection;
 
 // Check Connection
@@ -48,6 +50,11 @@ app.use(function (req, res, next) {
   res.locals.messages = require('express-messages')(req, res);
   next();
 });
+
+// Passport config
+require("./config/passport")(passport);
+app.use(passport.initialize());
+app.use(passport.session());
 
 // Home Route
 app.get('/', function(req, res){
