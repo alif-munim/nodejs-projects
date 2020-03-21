@@ -5,7 +5,6 @@ const bodyParser = require("body-parser");
 const session = require("express-session");
 const flash = require("connect-flash");
 
-
 mongoose.connect("mongodb://localhost/nodekb");
 let db = mongoose.connection;
 
@@ -66,7 +65,9 @@ app.get('/', function(req, res){
 
 // Route Files
 let articles = require("./routes/articles");
+let users = require("./routes/users");
 app.use("/articles", articles)
+app.use("/users", users)
 
 // Start Server
 app.listen(3000, function(){
