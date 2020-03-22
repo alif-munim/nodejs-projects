@@ -68,7 +68,7 @@ app.get('/', function(req, res){
       console.log(err);
     } else {
       res.render("index", {
-        title: "KnowledgeBase",
+        title: "Bibly",
         articles: articles
       });
     }
