@@ -3,6 +3,7 @@ An article inventory with CRUD functionality.
 
 *Created and deployed with the help of Brad Traversy's "Node & Express From Scratch" YouTube series.*
 
+
 ## Tools
 * NodeJS
 
@@ -18,6 +19,7 @@ An article inventory with CRUD functionality.
   Templating engine for views.
 
 Uploaded to the web via DigitalOcean.
+
 
 ## To Do
 - [x] Create local server with Express
