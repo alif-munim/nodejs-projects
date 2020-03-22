@@ -1,6 +1,8 @@
 # Bibly
 [Bibly](http://bibly.ml/) is an article inventory with CRUD functionality.
 
+More notes available on my [Notion](https://www.notion.so/alifmunim/Node-Knowledge-Base-a9c4c76e20e249c9bb4e325897f20eb8) workspace.
+
 *Created and deployed with the help of Brad Traversy's "Node & Express From Scratch" YouTube series.*
 
 
