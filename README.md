@@ -1,5 +1,6 @@
 # Bibly
 An article inventory with CRUD functionality.
+
 *Created and deployed with the help of Brad Traversy's "Node & Express From Scratch" YouTube series.*
 
 Created using the following tools:
