@@ -11,5 +11,8 @@ Created using the following tools:
 * MongoDB
 
   Database for storing articles and user info.
+* Pug
+
+  Templating engine for views.
 
 Uploaded to the web via DigitalOcean.
