@@ -1,11 +1,13 @@
 const spawn = require("child_process").spawn;
 
-const pythonProcess = spawn("python", ["api.py"]);
+const pythonProcess = spawn("python", ["csvjson.py"]);
 pythonProcess.stdout.on("data", (data) => {
 
     myStr = data.toString();
     myObj = JSON.parse(myStr);
 
-    console.log(myObj.data);
+    for (happyPoint in myObj) {
+        console.log(happyPoint);
+    }
 
 });
