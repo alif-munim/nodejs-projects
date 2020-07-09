@@ -8,9 +8,18 @@ function filteredList(dir, ext, callback) {
             return callback(err);
         }
 
-        const newList = list.filter(file => {
-            path.extname(file) == ext
-        });
+        let newList = [];
+        let fullExt = "." + ext;
+
+        list.forEach(file => {
+            if (path.extname(file) == fullExt) {
+                newList.push(file);
+            }
+        })
+
+        // const newList = list.filter(file => {
+        //     path.extname(file) == ext
+        // });
 
         callback(null, newList);
     });
